@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1025 1030">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #041f16;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: #de674d;
+      }
+
+      .cls-2 {
+        stroke: #e59d6c;
+      }
+
+      .cls-2, .cls-6, .cls-7 {
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 15px;
+      }
+
+      .cls-3 {
+        font-family: GoldenLights, 'Golden Lights';
+        font-size: 166.74px;
+      }
+
+      .cls-6 {
+        fill: #e59d6c;
+      }
+
+      .cls-6, .cls-7 {
+        stroke: #041f16;
+      }
+
+      .cls-8 {
+        letter-spacing: .06em;
+      }
+
+      .cls-9 {
+        letter-spacing: .06em;
+      }
+
+      .cls-7 {
+        fill: none;
+      }
+
+      .cls-10 {
+        letter-spacing: .09em;
+      }
+
+      .cls-11 {
+        fill: #e0d7b8;
+      }
+    </style>
+  </defs>
+  <rect class="cls-11" width="1025" height="1030"/>
+  <g>
+    <path class="cls-7" d="M497.63,214.46v101.37c0,25.71-20.85,46.56-46.56,46.56h0c-25.71,0-46.56-20.85-46.56-46.56v-101.37"/>
+    <polyline class="cls-6" points="427.44 555.12 427.55 414.02 480.7 414.06 480.6 555.17"/>
+    <line class="cls-6" x1="450.53" y1="214.51" x2="450.53" y2="309.13"/>
+    <g>
+      <line class="cls-2" x1="341.76" y1="362.17" x2="368.98" y2="385.14"/>
+      <line class="cls-2" x1="310.72" y1="432.77" x2="358.77" y2="433.19"/>
+      <line class="cls-2" x1="340.49" y1="503.79" x2="367.71" y2="482.53"/>
+    </g>
+    <g>
+      <line class="cls-2" x1="695.34" y1="361.97" x2="668.12" y2="384.93"/>
+      <line class="cls-2" x1="726.38" y1="432.57" x2="678.32" y2="432.99"/>
+      <line class="cls-2" x1="696.61" y1="503.59" x2="669.39" y2="482.33"/>
+    </g>
+    <line class="cls-6" x1="451.54" y1="366.16" x2="451.54" y2="410.79"/>
+    <circle class="cls-1" cx="454.07" cy="484.59" r="13.52"/>
+    <polyline class="cls-6" points="553.02 551.16 553.13 410.05 606.28 410.09 606.17 551.2"/>
+    <circle class="cls-1" cx="579.65" cy="480.63" r="13.52"/>
+    <path class="cls-7" d="M553.13,410.05s-.07-96.01-.07-153.69,54.5-68.13,54.5-68.13l-1.28,221.86"/>
+    <text class="cls-3" transform="translate(240.79 724.56) scale(1.19 1)"><tspan class="cls-8" x="0" y="0">À TA</tspan><tspan class="cls-10" x="233.11" y="0">B</tspan><tspan class="cls-9" x="301.97" y="0">LE!</tspan></text>
+    <circle class="cls-5" cx="518.42" cy="790.08" r="36"/>
+    <circle class="cls-4" cx="518.42" cy="790.08" r="10"/>
+    <circle class="cls-1" cx="595.42" cy="789.08" r="10"/>
+    <circle class="cls-1" cx="442.42" cy="788.08" r="10"/>
+  </g>
+</svg>
