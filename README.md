@@ -1,29 +1,9 @@
-#  tp-vuejs
+# À TABLE !
 
-This template should help get you started developing with Vue 3 in Vite.
+## Cependant, les appels d'API ne sont pas infinis. Si l'API ne répond pas, réessayer le lendemain car j'ai que la version gratuite. 
 
-## Recommended IDE Setup
+Pour voir le rendu final [À TABLE !](https://www.echimine.fr/projets/a-table/)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+pour avoir plus de détail sur le projet allez voir mon portfolio [projet À TABLE !](https://portfolio.echimine.fr/projet.html?id=3)
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+## Merci pour votre patience.
