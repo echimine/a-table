@@ -29,8 +29,8 @@ export default {
             <RouterLink :to="{name: 'recipes'}" class="header-logo" @click="menuMobile" > 
               <img src="../assets/images/logo-a-table.svg" alt="Logo À Table">
             </RouterLink>
-            <div>
-              <SearchBar />
+            <div class="search-barre">
+                <SearchBar/>
             </div>
             <ul class="header-menu">
                 <li>
@@ -50,6 +50,11 @@ export default {
               <div></div>
                 </div>
                 <ul class="mobile-menu" :class="{ active: isMenuOpen }">
+                  <li>
+                      <div>
+                        <SearchBar/>
+                      </div>
+                    </li> 
                     <li>
                         <RouterLink :to="{name:'favoris'}" @click="toggleMenu">My favorites</RouterLink>
                     </li>
@@ -59,6 +64,7 @@ export default {
                     <li>
                       <RouterLink :to="{name:'create-recipe'}" @click="toggleMenu">Create recipe</RouterLink>
                     </li>
+                    
                 </ul>
             </div>
       </header>
@@ -151,8 +157,16 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
-.burger.active {
-  transform: rotate(90deg);
+.burger.active div:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.burger.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active div:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
 }
 
 .mobile-menu {
@@ -205,6 +219,10 @@ header {
 
   .burger {
     display: flex;
+  }
+
+  .search-barre{
+    display: none;
   }
 
   .header-logo img {

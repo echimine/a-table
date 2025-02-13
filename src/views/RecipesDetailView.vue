@@ -57,7 +57,7 @@ import VP from '../components/VP.vue'
 export default {
   data() {
   return {
-    recipeId: null, // On initialise l'ID de la recette
+    recipeId: null, 
     recipeDetail: null,
   };
 },

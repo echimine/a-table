@@ -30,8 +30,8 @@ const router = createRouter({
       component: () => import('../views/RecipesDetailView.vue'),
     },
   ],
-  scrollBehavior(to, from, savedPosition) {
-    return { top: 0 }; // Scroll vers le haut avec un effet fluide
+  scrollBehavior() {
+    return { top: 0 }; 
   }
 });
 

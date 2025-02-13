@@ -38,14 +38,11 @@ export default {
 
     toggleFavorite(recipe) {
       if (this.isFavorite(recipe.id)) {
-        // Supprime la recette des favoris
         this.favorites = this.favorites.filter(fav => fav.id !== recipe.id);
       } else {
-        // Ajoute toute la recette aux favoris
         this.favorites.push(recipe); 
       }
 
-      // Met à jour localStorage
       localStorage.setItem("favorites", JSON.stringify(this.favorites));
     }
   },
@@ -71,7 +68,6 @@ export default {
   justify-content: center;
 }
 
-/* Carte */
 .recipe-card {
   background: white;
   border-radius: 10px;

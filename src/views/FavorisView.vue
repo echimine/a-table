@@ -71,7 +71,7 @@ export default {
         this.favorites.push(recipe);
     }
 
-    // Met à jour le localStorage
+
     localStorage.setItem("favorites", JSON.stringify(this.favorites));
 
     // Met à jour le store
@@ -102,7 +102,6 @@ export default {
   justify-content: center;
 }
 
-/* Carte */
 .recipe-card {
   background: white;
   border-radius: 10px;

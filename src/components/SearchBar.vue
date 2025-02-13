@@ -50,7 +50,7 @@ export default {
 </template>
 
 <style scoped>
-/* Conteneur principal */
+
 .search-container {
   position: relative;
   width: 100%;
@@ -58,7 +58,6 @@ export default {
   margin: 0 auto;
 }
 
-/* Barre de recherche stylée */
 .search-box {
   display: flex;
   align-items: center;
@@ -75,7 +74,6 @@ export default {
   box-shadow: 0 4px 10px rgba(255, 165, 0, 0.5);
 }
 
-/* Input */
 input[type="text"] {
   flex: 1;
   border: none;
@@ -85,13 +83,13 @@ input[type="text"] {
   padding-left: 10px;
 }
 
-/* Icône loupe */
+
 .search-icon {
   font-size: 18px;
   color: #999;
 }
 
-/* Croix pour effacer */
+
 .clear-icon {
   position: absolute;
   right: 15px;
@@ -101,13 +99,13 @@ input[type="text"] {
   transition: all 0.3s ease;
   opacity: 0;
   transform: scale(0.8);
-  pointer-events: none; /* Empêche l'interaction si la croix est invisible */
+  pointer-events: none; 
 }
 
 .search-box input:not(:placeholder-shown) + .clear-icon {
   opacity: 1;
   transform: scale(1);
-  pointer-events: auto; /* Active l'interaction seulement si du texte est présent */
+  pointer-events: auto; 
 }
 
 .clear-icon:hover {
@@ -115,7 +113,7 @@ input[type="text"] {
   transform: scale(1.2);
 }
 
-/* Liste de suggestions */
+
 .suggestions {
   position: absolute;
   top: 100%;
@@ -129,7 +127,6 @@ input[type="text"] {
   z-index: 10;
 }
 
-/* Style des résultats */
 .suggestions li {
   list-style: none;
   padding: 12px;
@@ -146,7 +143,6 @@ input[type="text"] {
   background: #f5f5f5;
 }
 
-/* Liens */
 .suggestions li a {
   text-decoration: none;
   color: #333;
@@ -154,4 +150,5 @@ input[type="text"] {
   display: block;
   width: 100%;
 }
+
 </style>

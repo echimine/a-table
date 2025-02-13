@@ -6,7 +6,7 @@ const store = reactive({
   details: {},
 
   async fetchRecipes() {
-    console.log("➡️ fetchRecipes() lancé..."); // Vérifie si la fonction est appelée
+    console.log(" fetchRecipes() lancé..."); 
 
     let data = localStorage.getItem("listeDesRecettes");
     
@@ -57,14 +57,14 @@ const store = reactive({
       if (!storedRecipes.results.some(r => r.id === recipeId)) {
         storedRecipes.results.push(recipe);
         localStorage.setItem("listeDesRecettes", JSON.stringify(storedRecipes));
-        console.log(`📌 Recette ajoutée dans localStorage : ${recipeId}`);
+        console.log(`Recette ajoutée dans localStorage : ${recipeId}`);
       }
   
       // Si l'ID est négatif, on l'ajoute directement dans les détails (sans fetch API)
       if (recipeId < 0) {
         store.details[recipeId] = recipe; // Ajout direct dans le store
         localStorage.setItem(`${recipeId}`, JSON.stringify(recipe)); // Sauvegarde comme un détail
-        console.log(`📂 Détails enregistrés pour la recette ${recipeId} (sans API)`);
+        console.log(`Détails enregistrés pour la recette ${recipeId} (sans API)`);
         continue;
       }
   
@@ -76,22 +76,19 @@ const store = reactive({
           const response = await spoonacularAPI.get(`/recipes/${recipeId}/information`);
           localStorage.setItem(`${recipeId}`, JSON.stringify(response.data));
           store.details[recipeId] = response.data;
-          console.log(`✅ Détails chargés pour la recette ${recipeId}`);
+          console.log(`Détails chargés pour la recette ${recipeId}`);
         } catch (error) {
-          console.error(`❌ Erreur lors de la récupération des détails de la recette ${recipeId} :`, error);
+          console.error(`Erreur lors de la récupération des détails de la recette ${recipeId} :`, error);
         }
       } else {
         store.details[recipeId] = JSON.parse(storedDetails);
-        console.log(`📂 Détails déjà en cache pour la recette ${recipeId}`);
+        console.log(`Détails déjà en cache pour la recette ${recipeId}`);
       }
     }
   }
   
   
 });
-
-// NE PAS APPELER ICI ! Le fetch doit être déclenché dans un composant.
-// store.fetchRecipes();
 
 export default store;
 

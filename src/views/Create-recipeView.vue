@@ -18,7 +18,7 @@
       </div>
       <div>
         <h2>Créer une recette</h2>
-      <div class="nice-form-group flex flex-direction-columns">
+      <div class="nice-form-group flex flex-direction-columns form-button">
           <label for="title">Titre de la recette</label>
         <input type="text" id="title" v-model="recipeTitle" placeholder="exemple : pâte carbonara" />
         <label for="image">Image</label>
@@ -137,13 +137,13 @@ export default {
       };
 
       if (this.isEditing) {
-        // Mise à jour d'une recette existante
+        // Mise à jour d'une recette 
         const index = listeDesRecettes.results.findIndex((r) => r.id === this.idRecipe);
         if (index !== -1) {
           listeDesRecettes.results[index] = nouvelleRecette;
         }
       } else {
-        // Ajout d'une nouvelle recette
+        // Ajout de la recette + décrément de la id de la recette
         listeDesRecettes.results.push(nouvelleRecette);
         this.idRecipe--;
         localStorage.setItem("currentIdRecipe", this.idRecipe);
@@ -208,7 +208,7 @@ export default {
 
 <style scoped>
 .nice-form-group input:focus {
-  outline: 1px solid var(--orange); /* Orange */
+  outline: 1px solid var(--orange); 
   border-color: var(--orange);
   box-shadow: 0 0 5px var(--orange);
 
@@ -220,6 +220,15 @@ margin-bottom: 25px;
 
 .nice-form-group label{
   font-size: 18px;
+}
+
+.form-button button{
+  background-color: var(--rouge);
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--noir);
+  border: 2px solid transparent;
+  margin: 10px;
 }
 
 </style>
